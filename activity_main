@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6FC5EC"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/newimg" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bungee"
+        android:outlineProvider="none"
+        android:text="WEATHER NOW"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/bungee"
+        android:hint="Search City"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/cityName"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="0dp"
+        android:background="#0D253A"
+        android:fontFamily="@font/bungee"
+        android:text="Search"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/bungee"
+        android:outlineProvider="none"
+        android:textSize="20dp"
+        android:textColor="#116084"/>
+
+</RelativeLayout>
